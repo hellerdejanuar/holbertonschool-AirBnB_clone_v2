@@ -28,3 +28,4 @@ sudo chown -hR ubuntu:ubuntu /data
 sudo sed -i "/server_name _/a location \/hbnb_static\/ {\n\t\talias \/data\/web_static\/current\/;\n\t}" /etc/nginx/sites-available/default
 
 sudo service nginx restart
+exit 0

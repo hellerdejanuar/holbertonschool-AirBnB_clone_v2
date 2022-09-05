@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+""" State Module for HBNBZZz project """
 from models.base_model import BaseModel, Base
 import sqlalchemy
 from sqlalchemy import Column, String

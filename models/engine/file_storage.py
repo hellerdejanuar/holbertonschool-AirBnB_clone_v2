@@ -79,4 +79,5 @@ class FileStorage:
             del FileStorage.__objects[k]
 
     def close(self):
-        reload()
+        """ close storage """
+        self.reload()

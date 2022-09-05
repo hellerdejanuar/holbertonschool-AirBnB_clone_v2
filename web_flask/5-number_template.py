@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ Flask module """
 from flask import Flask

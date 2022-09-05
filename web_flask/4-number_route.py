@@ -20,7 +20,7 @@ def hbnb():
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
     """ return C custom message """
-    text = "C " + text.replace("_", " ") 
+    text = "C " + text.replace("_", " ")
     return text
 
 

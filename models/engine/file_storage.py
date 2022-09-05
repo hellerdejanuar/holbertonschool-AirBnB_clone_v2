@@ -78,3 +78,5 @@ class FileStorage:
             k = obj.__class__.__name__ + "." + obj.id
             del FileStorage.__objects[k]
 
+    def close(self):
+        reload()

@@ -17,10 +17,10 @@ class State(BaseModel, Base):
     else:
         @property
         def cities(self):
-            """cities"""
+            """ getter that returns cities linked to current state """
             from models import storage
-            stacit = []
-            for stat in storage.all(City).values():
-                if self.id == city.state_id:
-                    stacit.append(storage.all(City)[stat])
-            return stacit
+            cities_list = []
+            for cit in storage.all(City).values():
+                if self.id == cit.state_id:
+                    cities_list.append(cit)
+            return cities_list

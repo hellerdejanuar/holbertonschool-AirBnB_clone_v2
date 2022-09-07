@@ -10,6 +10,7 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 
+
 model = {"BaseModel": BaseModel,
          "User": User,
          "State": State,
@@ -26,7 +27,7 @@ class FileStorage:
 
     def all(self, cls=None):
         """Returns a dictionary of models currently in storage"""
-        if cls != None and self.__objects:
+        if cls is not None and self.__objects:
             retob = {}
             for key, value in self.__objects.items():
                 classname = (key.split('.'))[0]
